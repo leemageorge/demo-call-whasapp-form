@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            margin: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        main {
+            padding: 2rem;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            margin-top: 15px;
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .call-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            text-align: center;
+            margin: 10px auto;
+        }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 100px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .whatsapp-float:hover {
+            background-color: #1ebe5b;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Basic Website</h1>
+        <p>A simple webpage layout</p>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>This is the home section. Here you can put an introduction or welcome message.</p>
+        </section>
+
+        <section id="about">
+            <h2>About</h2>
+            <p>This is the about section. Describe yourself or your site here.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>If you have any questions, feel free to reach out using the form below or call us directly:</p>
+            
+            <!-- Call Button -->
+            <a href="tel:+919633443047" class="call-button">Call Us</a>
+            
+            <!-- Contact Form -->
+            <form action="https://api.web3forms.com/submit" method="post">
+                <input type="hidden" name="access_key" value="e58827fb-44bb-4427-9562-4f7f58ff1d53">
+                <!-- Name Field -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <!-- Email Field -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- Message Field -->
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <!-- Submit Button -->
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/9633443047" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+        &#x1F4AC;
+    </a>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 My Basic Website</p>
+    </footer>
+
+</body>
+</html>
